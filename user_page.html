@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<h1>Welcome to your account</h1>
+		<p>...see functionality...</p>
+	</head>
+
+	<body>
+		<a href='sign_out.html'>User Profile</a>
+	
+		<script>
+			window.onload = function() {
+			if (cognitoUser != null) {
+				cognitoUser.getSession(function(err, session) {
+					if (err) {
+						alert(err);
+						
+						return;
+					}
+					console.log('session validity: '+ session.isValid());
+		</script>
+
+	</body>
+
+
+</html>
+
