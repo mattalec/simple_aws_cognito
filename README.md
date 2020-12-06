@@ -1,1 +1,0 @@
-# simple_aws_cognito
